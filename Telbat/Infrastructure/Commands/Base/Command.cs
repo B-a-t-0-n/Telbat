@@ -1,12 +1,12 @@
 ﻿using System.Windows.Input;
 
-namespace Telbat.Infrastructure.Commands
+namespace Telbat.Infrastructure.Commands.Base
 {
     public abstract class Command : ICommand
     {
-        public event EventHandler? CanExecuteChanged 
+        public event EventHandler? CanExecuteChanged
         {
-            add=> CommandManager.RequerySuggested += value;
+            add => CommandManager.RequerySuggested += value;
             remove => CommandManager.RequerySuggested -= value;
         }
 
