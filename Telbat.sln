@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telbat", "Telbat\Telbat.csproj", "{E121BFB5-D0CD-4FC4-95AC-33A16D8230BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telbat", "Telbat\Telbat.csproj", "{E121BFB5-D0CD-4FC4-95AC-33A16D8230BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{65378F0A-3BBB-40EF-B3DB-36C372143BAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelbatTestConsole", "TelbatTestConsole\TelbatTestConsole.csproj", "{61ACC758-87ED-4262-BF74-1643B89E1D82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelBatWPFTest", "TelBatWPFTest\TelBatWPFTest.csproj", "{886317AC-F2FC-4054-AADB-C865127A81DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,21 @@ Global
 		{E121BFB5-D0CD-4FC4-95AC-33A16D8230BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E121BFB5-D0CD-4FC4-95AC-33A16D8230BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E121BFB5-D0CD-4FC4-95AC-33A16D8230BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61ACC758-87ED-4262-BF74-1643B89E1D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61ACC758-87ED-4262-BF74-1643B89E1D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61ACC758-87ED-4262-BF74-1643B89E1D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61ACC758-87ED-4262-BF74-1643B89E1D82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886317AC-F2FC-4054-AADB-C865127A81DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886317AC-F2FC-4054-AADB-C865127A81DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886317AC-F2FC-4054-AADB-C865127A81DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886317AC-F2FC-4054-AADB-C865127A81DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61ACC758-87ED-4262-BF74-1643B89E1D82} = {65378F0A-3BBB-40EF-B3DB-36C372143BAD}
+		{886317AC-F2FC-4054-AADB-C865127A81DD} = {65378F0A-3BBB-40EF-B3DB-36C372143BAD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D3B10EFB-9779-4952-8B4D-ED251FF0A7B0}
