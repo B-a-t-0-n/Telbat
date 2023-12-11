@@ -2,7 +2,7 @@
 
 namespace Telbat.ViewModels
 {
-    internal class MainWindowViewModel : ViewModel
+    public class MainWindowViewModel : ViewModel
     {
         #region Заголовок окна
 
