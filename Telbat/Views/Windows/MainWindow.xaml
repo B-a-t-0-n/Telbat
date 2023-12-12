@@ -13,6 +13,7 @@
     </Window.DataContext>
     <Grid>
         <TextBox HorizontalAlignment="Left" Margin="33,29,0,0" TextWrapping="Wrap" Text= "{Binding Title, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="168,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.947,-1.44" Height="24" Width="117" CommandParameter =" " Command="{Binding CloseAppCommand}"/>
 
     </Grid>
 </Window>
