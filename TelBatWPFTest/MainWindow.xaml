@@ -17,7 +17,7 @@
         FontSize="18"
         FontFamily="{materialDesign:MaterialDesignFont}">
 
-    <Grid Margin="20">
+    <Grid Margin="20" MouseDown="Border_MouseDown">
         <Grid.Effect>
             <DropShadowEffect BlurRadius="30"
                               ShadowDepth="1"
@@ -69,9 +69,9 @@
                             VerticalAlignment="Top">
                     <TextBlock FontSize="46"
                                FontWeight="Light"
-                                Text="Sign up"
-                                Foreground="#ffffff"
-                                TextAlignment="Center"/>
+                               Text="Sign up"
+                               Foreground="#ffffff"
+                               TextAlignment="Center"/>
 
                     <TextBlock FontSize="16"
                                FontWeight="Light"
@@ -89,10 +89,12 @@
                 </StackPanel>
             </Grid>
         </Border>
+        
+        <!--Правая часть-->
         <Border Grid.Column="1"
                 Background="#ffffff"
-                CornerRadius="0 10 10 0"
-                MouseDown="Border_MouseDown">
+                CornerRadius="0 10 10 0">
+            
             <Grid>
                 <!--кнопка закрыть-->
                 <materialDesign:PackIcon Kind="Close"
@@ -105,12 +107,40 @@
 
                 <StackPanel VerticalAlignment="Center"
                             Margin="75 0">
-                    <TextBox Style="{StaticResource MaterialDesignComboBoxEditableTextBox}"
-                             Text="Батон Батонович Батонов"
-                             materialDesign:HintAssist.Hint="Username"
+                    
+                    <TextBox materialDesign:HintAssist.Hint="Username"
+                             materialDesign:HintAssist.IsFloating="True"
                              materialDesign:HintAssist.FloatingOffset="0,-20"
                              BorderBrush="#c5c8cc"
-                             BorderThickness="0 0 0 1.5" Height="27"/>
+                             BorderThickness="0 0 0 1.5"
+                             Margin="0 20"/>
+
+                    <PasswordBox materialDesign:HintAssist.Hint="Password"
+                                 materialDesign:HintAssist.IsFloating="True"
+                                 materialDesign:HintAssist.FloatingOffset="0,-20"
+                                 BorderBrush="#c5c8cc"
+                                 BorderThickness="0 0 0 1.5" 
+                                 Margin="0 20"/>
+
+                    <PasswordBox materialDesign:HintAssist.Hint="Repeat password"
+                                 materialDesign:HintAssist.IsFloating="True"
+                                 materialDesign:HintAssist.FloatingOffset="0,-20"
+                                 BorderBrush="#c5c8cc"
+                                 BorderThickness="0 0 0 1.5" 
+                                 Margin="0 20"/>
+
+                    <StackPanel Orientation="Horizontal">
+
+                        <Button Content="Sign up"
+                                Background="#05b790"
+                                Foreground="#ffffff"
+                                FontSize="18"
+                                Width="120"
+                                Height="45"
+                                materialDesign:ButtonAssist.CornerRadius="10" Cursor="Hand"/>
+
+                    </StackPanel>
+
                 </StackPanel>
             </Grid>
         </Border>
