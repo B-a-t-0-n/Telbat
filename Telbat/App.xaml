@@ -4,6 +4,9 @@
              xmlns:local="clr-namespace:Telbat"
              StartupUri="Views\Windows\MainWindow.xaml">
     <Application.Resources>
-         
+        <!--WindowStyle="None"
+AllowsTransparency="True"
+Background="Transparent"
+ResizeMode="NoResize"-->
     </Application.Resources>
 </Application>
