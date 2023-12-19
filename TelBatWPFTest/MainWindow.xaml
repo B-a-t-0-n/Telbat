@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Title="MainWindow"
     Height="645"
-    Width="875"
+    Width="915"
     WindowStartupLocation="CenterScreen"
     FontSize="18"
     FontFamily="{materialDesign:MaterialDesignFont}">
@@ -29,7 +29,7 @@
         <!--левая часть-->
         
         <Border Grid.Column="0" 
-                Background="#07bf96"
+                Background="#FF9800"
                 ClipToBounds="True">
 
                 
@@ -40,16 +40,16 @@
                 <Ellipse Width="500"
                          Height="500"
                          VerticalAlignment="Bottom"
-                         Fill="#5eccb4"
+                         Fill="#FFB74D"
                          Margin="50 0 0 -200"
                          Opacity="0.6"/>
 
                 <Ellipse Width="300"
                          Height="300"
                          VerticalAlignment="Bottom"
-                         Fill="#5eccb4"
+                         Fill="#FFB74D"
                          Margin="-300 0 0 -100"
-                         Opacity="0.8" RenderTransformOrigin="0.5,0.5">
+                         Opacity="0.5" RenderTransformOrigin="0.5,0.5">
                     <Ellipse.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -63,22 +63,23 @@
                 <Ellipse Width="400"
                          Height="400"
                          VerticalAlignment="Bottom"
-                         Fill="#5eccb4"
+                         Fill="#FFB74D"
                          Margin="50 0 0 -200"
                          Opacity="1"/>
 
                 <!--информация о начальном меню-->
                 <StackPanel Margin="0 120 0 0"
                             VerticalAlignment="Top">
+                    
                     <TextBlock FontSize="46"
                                FontWeight="Light"
                                Text="Telbat"
                                Foreground="#ffffff"
                                TextAlignment="Center"/>
-
+                    
                     <TextBlock FontSize="16"
                                FontWeight="Light"
-                               Foreground="#d1f2eb"
+                               Foreground="#ffffff"
                                TextAlignment="Center"
                                Text="мессенджер для общения"
                                Margin="0 8 0 3"/>
@@ -86,7 +87,7 @@
                     <TextBlock FontSize="16"
                                FontWeight="Light"
                                Text="с удобным и простым интерфейсом"
-                               Foreground="#d1f2eb"
+                               Foreground="#ffffff"
                                TextAlignment="Center"/>
 
                 </StackPanel>
@@ -98,65 +99,60 @@
         <Border Grid.Column="1"
                 Background="#ffffff"
                 CornerRadius="0 10 10 0">
-            
+
             <Grid>
-                <!--кнопка закрыть-->
-                <materialDesign:PackIcon Kind="Close"
-                                         VerticalAlignment="Top"
-                                         Width="20"
-                                         Height="20"
-                                         HorizontalAlignment="Right"
-                                         Opacity="0.3"
-                                         Margin="0 13 14 0"/>
                 
-                    <StackPanel Margin="0 40 0 0" VerticalAlignment="Top">
 
-                        <TextBlock FontSize="48"
-                                   Text="Sign up"
-                                   Foreground="#07bf96"
-                                   TextAlignment="Center"/>
+                <StackPanel Margin="0 40 0 0" VerticalAlignment="Top">
 
-                    </StackPanel>
-                
-                
-                <Viewbox>
+                    <TextBlock FontSize="48"
+                               Text="Регистрация"
+                               Foreground="#FF9800"
+                               TextAlignment="Center"/>
+
+                </StackPanel>
+
+
+                <!--<Viewbox>-->
                     <StackPanel VerticalAlignment="Center"
                                 Margin="75 0 75 0">
-                    
-                        <TextBox materialDesign:HintAssist.Hint="Username"
+                        
+                        
+
+                        <TextBox materialDesign:HintAssist.Hint="Имя пользователя"
                                  materialDesign:HintAssist.IsFloating="True"
                                  materialDesign:HintAssist.FloatingOffset="0,-20"
                                  BorderBrush="#c5c8cc"
                                  BorderThickness="0 0 0 1.5"
                                  Margin="0 20"/>
 
-                        <PasswordBox materialDesign:HintAssist.Hint="Password"
+                        <PasswordBox materialDesign:HintAssist.Hint="Пароль"
                                      materialDesign:HintAssist.IsFloating="True"
                                      materialDesign:HintAssist.FloatingOffset="0,-20"
                                      BorderBrush="#c5c8cc"
                                      BorderThickness="0 0 0 1.5" 
                                      Margin="0 20"/>
 
-                        <PasswordBox materialDesign:HintAssist.Hint="Repeat password"
+                        <PasswordBox materialDesign:HintAssist.Hint="Повторите пароль"
                                      materialDesign:HintAssist.IsFloating="True"
                                      materialDesign:HintAssist.FloatingOffset="0,-20"
                                      BorderBrush="#c5c8cc"
                                      BorderThickness="0 0 0 1.5" 
                                      Margin="0 20"/>
 
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal" Margin="0 30 0 0 ">
 
-                            <Button Content="Sign up"
-                                    Background="#05b790"
+                            <Button Content="Зарегестрироваться"
+                                    Background="#FF9800"
                                     Foreground="#ffffff"
                                     FontSize="18"
-                                    Width="120"
+                                    Width="220"
                                     Height="45"
                                     materialDesign:ButtonAssist.CornerRadius="10" 
                                     Cursor="Hand"/>
 
-                            <Button Content="or Login"
-                                    FontSize="16"
+                            <Button Content="назад"
+                                    FontSize="18"
                                     Width="120"
                                     Height="45"
                                     Margin="5 0 0 0"
@@ -167,8 +163,9 @@
                         </StackPanel>
 
                     </StackPanel>
-                </Viewbox>
+                <!--</Viewbox>-->
             </Grid>
+
         </Border>
 
 
