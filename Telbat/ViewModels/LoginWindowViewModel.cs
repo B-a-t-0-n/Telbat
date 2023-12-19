@@ -5,7 +5,7 @@ using Telbat.ViewModels.Base;
 
 namespace Telbat.ViewModels
 {
-    public class MainWindowViewModel : ViewModel
+    public class LoginWindowViewModel : ViewModel
     {
         #region Заголовок окна
 
@@ -38,7 +38,7 @@ namespace Telbat.ViewModels
         #endregion
         #endregion
 
-        public MainWindowViewModel()
+        public LoginWindowViewModel()
         {
             #region команды
 
