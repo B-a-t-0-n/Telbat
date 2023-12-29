@@ -96,77 +96,7 @@
         </Border>
         
         <!--Правая часть-->
-        <Border Grid.Column="1"
-                Background="#ffffff"
-                CornerRadius="0 10 10 0">
-
-            <Grid>
-                
-
-                <StackPanel Margin="0 40 0 0" VerticalAlignment="Top">
-
-                    <TextBlock FontSize="48"
-                               Text="Регистрация"
-                               Foreground="#FF9800"
-                               TextAlignment="Center"/>
-
-                </StackPanel>
-
-
-                <!--<Viewbox>-->
-                    <StackPanel VerticalAlignment="Center"
-                                Margin="75 0 75 0">
-                        
-                        
-
-                        <TextBox materialDesign:HintAssist.Hint="Имя пользователя"
-                                 materialDesign:HintAssist.IsFloating="True"
-                                 materialDesign:HintAssist.FloatingOffset="0,-20"
-                                 BorderBrush="#c5c8cc"
-                                 BorderThickness="0 0 0 1.5"
-                                 Margin="0 20"/>
-
-                        <PasswordBox materialDesign:HintAssist.Hint="Пароль"
-                                     materialDesign:HintAssist.IsFloating="True"
-                                     materialDesign:HintAssist.FloatingOffset="0,-20"
-                                     BorderBrush="#c5c8cc"
-                                     BorderThickness="0 0 0 1.5" 
-                                     Margin="0 20"/>
-
-                        <PasswordBox materialDesign:HintAssist.Hint="Повторите пароль"
-                                     materialDesign:HintAssist.IsFloating="True"
-                                     materialDesign:HintAssist.FloatingOffset="0,-20"
-                                     BorderBrush="#c5c8cc"
-                                     BorderThickness="0 0 0 1.5" 
-                                     Margin="0 20"/>
-
-                        <StackPanel Orientation="Horizontal" Margin="0 30 0 0 ">
-
-                            <Button Content="Зарегестрироваться"
-                                    Background="#FF9800"
-                                    Foreground="#ffffff"
-                                    FontSize="18"
-                                    Width="220"
-                                    Height="45"
-                                    materialDesign:ButtonAssist.CornerRadius="10" 
-                                    Cursor="Hand"/>
-
-                            <Button Content="назад"
-                                    FontSize="18"
-                                    Width="120"
-                                    Height="45"
-                                    Margin="5 0 0 0"
-                                    Style="{StaticResource MaterialDesignFlatButton}"
-                                    materialDesign:ButtonAssist.CornerRadius="10" 
-                                    Cursor="Hand"/>
-
-                        </StackPanel>
-
-                    </StackPanel>
-                <!--</Viewbox>-->
-            </Grid>
-
-        </Border>
+        
 
 
     </Grid>

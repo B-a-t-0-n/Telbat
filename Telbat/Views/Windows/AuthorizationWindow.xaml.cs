@@ -2,9 +2,9 @@
 
 namespace Telbat
 {
-    public partial class LoginWindow : Window
+    public partial class AuthorizationWindow : Window
     {
-        public LoginWindow()
+        public AuthorizationWindow()
         {
             InitializeComponent();
         }
